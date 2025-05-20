@@ -5,7 +5,6 @@ import { dirname, join } from 'path';
 import { db } from './db/index.js';
 import { taskRoutes } from './routes/taskroutes.js';
 
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 

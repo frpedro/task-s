@@ -19,7 +19,7 @@ export async function taskRoutes(server) {
     try {
       // Fazendo a inserção da tarefa no banco de dados
       const result = await db`
-        INSERT INTO main (input_msg, output_msg, data_msg) 
+        INSERT INTO main (input_msg, output_msg, date_msg) 
         VALUES (${input_msg}, ${ia_response}, NOW()) 
         RETURNING *;
       `;
